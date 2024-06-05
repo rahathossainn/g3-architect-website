@@ -65,21 +65,100 @@ nav li a{
     width: 100%;
 }
 
+/* Main Styles */
+main{
+    width: 75%;
+    margin: 100px auto;
+}
+.teams-container{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teams-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding: 0px 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-description{
+    margin: 20px 0px;
+    color: #727272;
+}
+.teams-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-title .feature{
+    color: #FF900E;
+    font-weight: 800;
+}
+
+/* Features Section */
+
+/* Feature End */
+
+/* Facts Start */
+.facts-cart-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.facts-cart{
+    text-align: center;
+    border: 1px solid #FF900E;
+    width: 20%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 80px 20px;
+}
+.card-title{
+    font-size: 2.8em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* color: #727272; */
+}
+.card-desc{
+    font-size: 1.5em;
+}
+.facts-title{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.facts-description{
+    color: #727272;
+}
 /* responsive media */
 /* mobile */
 @media screen  and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav,
+    .teams-container,
+    .facts-cart-container{
         flex-direction: column;
+    }
+    .facts-cart{
+        padding: 80px 113px;
     }
     nav > ul{
         margin-top: 30px;
         margin-bottom: -40px;
     }
+    .teams-image-container{
+        grid-template-columns: 1fr;
+    }
+   
 }
-/* table */
+/* tablet */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     nav{
         flex-direction: column;
