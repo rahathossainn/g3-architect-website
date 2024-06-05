@@ -152,6 +152,16 @@ main{
     display: flex;
     justify-content: space-around;
 }
+/* footer styles */
+.footer{
+    background-color: #ff8f0e21;
+}
+.footer p{
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+    color: #727277;
+}
 /* responsive media */
 /* mobile */
 @media screen  and (max-width: 576px) {
